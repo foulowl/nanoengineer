@@ -1402,26 +1402,26 @@ class checkpoint_metainfo:
 
 # ==
 
-from idlelib.Delegator import Delegator
+#from idlelib.Delegator import Delegator
 # print "Delegator",Delegator,type(Delegator),`Delegator`
 
-class MergingDiff(Delegator): ###@@@ this is in use, but has no effect [as of bfr 060326].
-    """
-    A higher-level diff, consisting of a diff with some merging options
-    which cause more diffs to be applied with it
-    """
-    # When this actually merges, it needs to override menu_desc & cp's, too. ####@@@@
-    def __init__(self, diff, flags = None, archive = None):
-        Delegator.__init__(self, diff) # diff is now self.delegate; all its attrs should be constant since they get set on self too
-        self.flags = flags
-        self.archive = archive # this ref is non-cyclic, since this kind of diff doesn't get stored anywhere for a long time
-    def apply_to(self, archive):
-        res = self.delegate.apply_to(archive)
-        # print "now we should apply the diffs we would merge with", self #####@@@@@
-        return res
-    # def __del__(self):
-    #     print "bye!" # this proves it's readily being deleted...
-    pass
+#class MergingDiff(Delegator): ###@@@ this is in use, but has no effect [as of bfr 060326].
+#    """
+#    A higher-level diff, consisting of a diff with some merging options
+#    which cause more diffs to be applied with it
+#    """
+#    # When this actually merges, it needs to override menu_desc & cp's, too. ####@@@@
+#    def __init__(self, diff, flags = None, archive = None):
+#        Delegator.__init__(self, diff) # diff is now self.delegate; all its attrs should be constant since they get set on self too
+#        self.flags = flags
+#        self.archive = archive # this ref is non-cyclic, since this kind of diff doesn't get stored anywhere for a long time
+#    def apply_to(self, archive):
+#        res = self.delegate.apply_to(archive)
+#        # print "now we should apply the diffs we would merge with", self #####@@@@@
+#        return res
+#    # def __del__(self):
+#    #     print "bye!" # this proves it's readily being deleted...
+#    pass
 
 # ==
 
