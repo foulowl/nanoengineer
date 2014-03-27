@@ -16,12 +16,12 @@ History:
 
 """
 
-import Image   # This is from the PIL library
-import ImageOps
-import PngImagePlugin # Don't remove this, it is used by package creator to find right modules to support PNG image -- Huaicai
+from PIL import Image   # This is from the PIL library
+from PIL import ImageOps
+from PIL import PngImagePlugin # Don't remove this, it is used by package creator to find right modules to support PNG image -- Huaicai
 
 # try to tell pylint we need to import PngImagePlugin [bruce 071023]
-PngImagePlugin
+#PngImagePlugin
 
 from utilities import debug_flags #bruce 061127
 from utilities.debug import print_compact_traceback #bruce 061128
