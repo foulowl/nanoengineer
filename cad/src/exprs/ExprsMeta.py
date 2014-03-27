@@ -134,7 +134,7 @@ What ExprsMeta handles specifically:
 
 # from python library
 
-from idlelib.Delegator import Delegator
+#from idlelib.Delegator import Delegator
 
 # from modules in cad/src
 
@@ -1275,7 +1275,7 @@ class DictFromKeysAndFunction(ConstantComputeMethodMixin):
     iteritems = items
     pass # end of class DictFromKeysAndFunction
 
-class RecomputableDict(Delegator):
+class RecomputableDict:
     """
     Act like a read-only dict with variable (invalidatable/recomputable) values,
     and a fixed key sequence used only to support iteration

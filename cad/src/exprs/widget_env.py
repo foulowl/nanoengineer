@@ -71,13 +71,13 @@ The likely uses for lexical variables are in user-defined rules, and the hardcod
 
 #e rename module?? possible names: expr_env, instance_env, widget_env, drawing_env -- or something plural?
 
-from idlelib.Delegator import Delegator ###e we should use our own delegation code, since we don't need the key cache so it can be more efficient
+#from idlelib.Delegator import Delegator ###e we should use our own delegation code, since we don't need the key cache so it can be more efficient
 
 from exprs.Exprs import canon_expr
 from exprs.py_utils import printnim
 ##from exprs.py_utils import printfyi
 
-class widget_env(Delegator):
+class widget_env:
     "represent an environment for the instantiation and use of widget exprs (with rules and staterefs)"
     # I intend to add this soon here (default value): _self = None
     printnim("SOON I need to add _self = None to class widget_env")#####@@@@@
@@ -90,7 +90,7 @@ class widget_env(Delegator):
         self.glpane = glpane
         self.staterefs = staterefs ###k
         ###KLUGES, explained below [061028]:
-        Delegator.__init__(self, delegate) # this will be None or the parent env
+        #Delegator.__init__(self, delegate) # this will be None or the parent env
         for k,v in lexmods.iteritems():
             setattr(self, k,v) # worst part of the kluge -- dangerous if symnames overlap method names
             # next worst part: special methods like __repr__ end up delegating
