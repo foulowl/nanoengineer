@@ -32,11 +32,11 @@ gl_lighting.py gl_buffers.py
 # as of 2007/06/25.  It's not clear why acos is coming from math...
 from Numeric import sin, cos, pi
 
-from OpenGL.GL import GL_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ARRAY_BUFFER_ARB
 from OpenGL.GL import glBegin
 from OpenGL.GL import GL_COMPILE
 from OpenGL.GL import glDisable
-from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
 from OpenGL.GL import glEnable
 from OpenGL.GL import glEnd
 from OpenGL.GL import glEndList

@@ -114,9 +114,9 @@ from graphics.drawing.gl_buffers import GLBufferObject
 
 import numpy
 
-from OpenGL.GL import GL_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ARRAY_BUFFER_ARB
 from OpenGL.GL import GL_CULL_FACE
-from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
 from OpenGL.GL import GL_FLOAT
 from OpenGL.GL import GL_QUADS
 from OpenGL.GL import GL_STATIC_DRAW

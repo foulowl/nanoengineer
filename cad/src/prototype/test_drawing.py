@@ -216,14 +216,14 @@ from graphics.drawing.gl_Scale import glScale
 
 import numpy
 
-from OpenGL.GL import GL_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ARRAY_BUFFER_ARB
 from OpenGL.GL import GL_COLOR_BUFFER_BIT
 from OpenGL.GL import GL_COMPILE_AND_EXECUTE
 from OpenGL.GL import GL_CULL_FACE
 from OpenGL.GL import GL_STENCIL_BUFFER_BIT
 from OpenGL.GL import GL_DEPTH_BUFFER_BIT
 from OpenGL.GL import GL_DEPTH_TEST
-from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
+#from OpenGL.GL import GL_ELEMENT_ARRAY_BUFFER_ARB
 from OpenGL.GL import GL_FLOAT
 from OpenGL.GL import GL_LINES
 from OpenGL.GL import GL_MODELVIEW
